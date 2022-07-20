@@ -6,7 +6,6 @@
  *
  * @p: the PyObject
  */
-
 void print_python_float(PyObject *p)
 {
 	double value = 0;
@@ -31,7 +30,6 @@ void print_python_float(PyObject *p)
  *
  * @p: the PyObject
  */
-
 void print_python_bytes(PyObject *p)
 {
 	Py_ssize_t size = 0, i = 0;
@@ -64,7 +62,6 @@ void print_python_bytes(PyObject *p)
  *
  * @p: the PyObject
  */
-
 void print_python_list(PyObject *p)
 {
 	Py_ssize_t size = 0;
