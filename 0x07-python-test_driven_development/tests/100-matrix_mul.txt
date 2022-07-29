@@ -195,7 +195,7 @@ integers or floats!
     TypeError: m_a should contain only integers or floats
 
 Finally, the length of all rows in matrices ``m_a`` and ``m_b`` should be
-equivalent. Otherwise, a TypeError is raised.
+equivalent. Otherwise, a TypeError is raised
 
 ::
 
