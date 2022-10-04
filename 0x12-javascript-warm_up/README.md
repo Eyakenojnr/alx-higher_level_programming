@@ -16,6 +16,7 @@
 * [JavaScript Tutorial](https://m.youtube.com/watch?v=vZBCTc9zHtI&t=4s)
 * [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 * [ process.argv](https://nodejs.org/api/process.html#process_process_argv)
+* [Simple Intro to NodeJS Module Scope](http://51elliot.blogspot.com/2012/01/simple-intro-to-nodejs-module-scope.html?m=1)
 ## General
 * Why JavaScript programming is amazing
 * How to run a JavaScript script
