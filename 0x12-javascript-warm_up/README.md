@@ -12,6 +12,6 @@ Functions
 Objects and Arrays
 Intrinsic Objects
 Module patterns
-var, let and const
-JavaScript Tutorial
-Modern JS
+* [var, let and const]()
+* [JavaScript Tutorial](https://m.youtube.com/watch?v=vZBCTc9zHtI&t=4s)
+* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
