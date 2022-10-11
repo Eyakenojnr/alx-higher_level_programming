@@ -8,6 +8,7 @@
 * [Learn to Program](https://m.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [Learn to Program 2 : Looping](https://m.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
+* [ByteCode](https://docs.python.org/3.4/library/dis.html)
 ### man or help:
 * `python3`
 ## General
@@ -19,11 +20,11 @@
 * How to use the `while` and `for` loops
 * How is Python’s `for` different from `C`‘s?
 * How to use the `break` and `continue` statements
-How to use else clauses on loops
-What does the pass statement do, and when to use it
-How to use range
-What is a function and how do you use functions
-What does return a function that does not use any return statement
-Scope of variables
-What’s a traceback
-What are the arithmetic operators and how to use them
+* How to use `else` clauses on loops
+* What does the `pass` statement do, and when to use it
+* How to use `range`
+* What is a function and how to use functions
+* What does return a function that does not use any `return` statement
+* Scope of variables
+* What’s a traceback
+* What are the arithmetic operators and how to use them
