@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Print the English alphabet in lowercase, not followed by a new line."""
+"""Print English alphabet in lowercase, not followed by a new line."""
 
-for letter in range(97, 123):
-    print("{}".format(chr(letter)), end="")
+for letter in range(ord('a'), ord('z')+1):
+    print(chr(letter), end='')
