@@ -6,10 +6,10 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
 
-    # If number of arguments is not 3, print usage to stderr and exit
+    # If number of arguments is not 3, print usage and exit
     args = len(sys.argv) - 1
     if args != 3:
-        sys.stderr.write("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     operator = sys.argv[2]
@@ -17,9 +17,9 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
 
-    # If invalid operator is passed, print error message to stderr and exit
+    # If invalid operator is passed, print error message and exit
     if operator not in legible_operator:
-        sys.stderr.write("Unknown operator. Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
     else:
         if operator == '+':
