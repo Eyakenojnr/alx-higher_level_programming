@@ -4,6 +4,6 @@ def safe_print_integer(value):
     tag = True
     try:
         print("{:d}".format(value))
-    except ValueError:
+    except:
         tag = False
     return tag
