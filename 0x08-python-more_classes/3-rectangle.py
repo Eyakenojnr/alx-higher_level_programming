@@ -6,19 +6,18 @@ class Rectangle:
     """Rectangle class"""
 
     def __init__(self, width=0, height=0):
-        """init for Rectangle"""
+        """Initialize instances of class."""
         self.width = width
         self.height = height
 
     def __str__(self):
-        """prints the rectangle"""
-        if self.__height == 0 or self.__width == 0:
+        if self.__width is 0 or self.__height is 0:
             return ""
-        size = "#" * self.__width
-        rect = []
-        for index in range(self.__height):
-            rect.append(size)
-        return "\n".join(rect)
+
+        str_repr = ""
+        for i in range(self.__height):
+            str_repr += "#" * self.__width + "\n"
+        return str_repr
 
     @property
     def width(self):
