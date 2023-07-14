@@ -11,7 +11,7 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
 
         str_repr = ""
