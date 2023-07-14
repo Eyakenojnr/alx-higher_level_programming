@@ -14,10 +14,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        str_repr = ""
+        str_repr = []
+        pound_str = '#' * self.__width
         for i in range(self.__height):
-            str_repr += "#" * self.__width + "\n"
-        return str_repr
+            str_repr.append(pound_str)
+        return '\n'.join(str_repr)
 
     @property
     def width(self):
