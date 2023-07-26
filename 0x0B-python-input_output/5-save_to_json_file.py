@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines save JSON object to file."""
 import json
 
 
