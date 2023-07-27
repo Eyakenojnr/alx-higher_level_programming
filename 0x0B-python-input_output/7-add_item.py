@@ -1,15 +1,20 @@
 #!/usr/bin/python3
 """Add all arguments to a Python list and save them to a file."""
-import sys
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    import sys
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-    load_from_json_file = \
-        __import__('6-load_from_json_file').load_from_json_file
+    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
+    filename = 'add_item.json'
     try:
-        items = load_from_json_file("add_item.json")
+        # Load existing list from file
+        items = load_from_json_file(filename)
     except FileNotFoundError:
+        # Create a new list if the file doesn't exist
         items = []
+
+    # Add arguments to the list
     items.extend(sys.argv[1:])
-    save_to_json_file(items, "add_item.json")
+    # Save the updated list to the file
+    save_to_json_file(items, filename)
