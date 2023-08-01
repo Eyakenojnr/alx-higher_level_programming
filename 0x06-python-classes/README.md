@@ -48,7 +48,11 @@
 20. **Using the** `getattr()` **Function**: The `getattr()` function is a built-in function in Python that is used to get the value of an object's attribute dynamically. It is useful in situations where the attribute name is not known until runntime or when accessing attributes conditionally based on some runtime condition. It provides a flexible way to access object attributes dynamically.
 
 ## Tasks
-0. **My first square** ([0-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/0-square.py))
-An empty class `Square` that defines a square
-1. **Square with size** ([1-square..py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/1-square.py))
+0. **My first square** ([0-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/0-square.py)): An empty class `Square` that defines a square
 
+1. **Square with size** ([1-square..py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/1-square.py)): Defines a class `Square`. This class represents a square and has a private attribute called `__size` that represents the size of a side of the square. The class also has a constructor method `__init__` that initializes the square object with a given size. The `__size` attribute is set to the provided size value.
+Overall, this code serves as a basic structure for creating square objects with a specified size.
+
+2. **Size validation** ([2-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/2-square.py)):
+This class represents a square and has a private attribute `__size` that represents size of a side of the square. The class includes a constructor method `__init__` that initializes the square object with a given size. The size parameter has a default value of 0, and error handling is implemented to ensure that the size is a non-negative integer. If the size is not an integer or is less than 0, appropriate exceptions are raised.
+This code provides a more robust implementation for creating square objects with valid sizes.
