@@ -39,3 +39,77 @@ This class represents a square and has a private attribute `__size` that represe
 This code provides a more robust implementation for creating square objects with valid sizes.
 
 3. **Area of a square** ([3-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/3-square.py)): Defines a class called `Square`. This class represents a square and includes attributes and methods to work with square objects. The class has a private attribute `__size` that represents the size of a side of the square. Constructor method __init__ initializes the square object with a given size, performing error checks to ensure the size is a non-negative integer. The class also includes a method `area` that calculates area of the square. This code provides a more robust implementation for creating square objects, handling errors, and calculating their areas.
+
+4. **Access and update private attribute** ([4-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/4-square.py)): Defines a `Square` class in Python. It represents a square and has a private attribute `__size` that stores the size of the square's side. The class includes a constructor method to initialize the square with a given size, a getter and setter method for the size attribute with type and value validation, and a method to calculate the area of the square. This code demonstrates encapsulation and validation techniques in object-oriented programming.
+
+5. **Printing a square** ([5-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/5-square.py)): The updated code defines a `Square` class in Python, representing a square shape. It includes attributes for the size of the square's side and methods for initializing the square, getting and setting the size, calculating the area, and printing the square using the `#` character. The code demonstrates encapsulation, validation, and additional functionality for the `Square` class.
+
+6. **Coordinates of a square** ([6-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/6-square.py)): The code defines a `Square` class in Python, representing a square shape. It includes attributes for the size of one edge of the square and the position of the square. The class has methods for initializing the square, getting and setting the size and position, calculating the area, and printing the square using the `#` character. The code demonstrates encapsulation, validation, and additional functionality for the `Square` class.
+
+7. **Singly linked list** ([100-singly_linked_list](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/100-singly_linked_list.py)): The code defines two classes: `Node` and `SinglyLinkedList`.
+The `Node` class represents a node of a singly linked list and has attributes for the data value of the node and a reference to the next node in the list. It includes getter and setter methods for the `data` and `next_node` attributes, with type validation.
+The `SinglyLinkedList` class represents a singly linked list and has an attribute `__head` that points to the first node in the list. It includes a `__str__` method to define the print behavior of the linked list, returning a string representation of the data values in each node.
+The `SinglyLinkedList` class also includes a `sorted_insert` method that inserts a new node with a given value into the linked list while maintaining the sorted order. It traverses the list to find the appropriate position for insertion and updates the `next_node` references accordingly.
+Overall, this code provides a basic implementation of a singly linked list with node insertion in sorted order.
+
+8. **Print Square instance** ([101-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/101-square.py)): The code defines a `Square` class in Python, representing a square shape. It includes attributes for the size of one edge of the square and the position of the square. The class has methods for initializing the square, getting and setting the size and position, calculating the area, printing the square using the `#` character, and defining the string representation of the square. The code demonstrates encapsulation, validation, and additional functionality for the `Square` class
+
+9. **Compare 2 squares** ([102-square.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/102-square.py)): The code defines a `Square` class in Python. This class represents a square shape and includes attributes for the size of the square and methods for calculating the area, comparing squares based on their size, and getting and setting the size attribute.
+The `__init__` method initializes a `Square` object with a given size. The `area` method calculates the area of the square by squaring the `size` attribute. The `size` method is a getter and setter for the size attribute, performing type and value validation.
+The class also includes comparison methods (`__lt__`, `__le__`, `__eq__`, `__ne__`, `__ge__`, `__gt__`) that allow for comparing squares based on their size.
+Overall, this code provides a basic implementation of a `Square` class with size validation and comparison functionality.
+
+10. **ByteCode -> Python #5** ([103-magic_class.py](https://github.com/Eyakenojnr/alx-higher_level_programming/blob/master/0x06-python-classes/103-magic_class.py)): This task involves the conversion of the byte code to python code:
+```
+Disassembly of __init__:
+ 10           0 LOAD_CONST               1 (0)
+              3 LOAD_FAST                0 (self)
+              6 STORE_ATTR               0 (_MagicClass__radius)
+
+ 11           9 LOAD_GLOBAL              1 (type)
+             12 LOAD_FAST                1 (radius)
+             15 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             18 LOAD_GLOBAL              2 (int)
+             21 COMPARE_OP               9 (is not)
+             24 POP_JUMP_IF_FALSE       60
+             27 LOAD_GLOBAL              1 (type)
+             30 LOAD_FAST                1 (radius)
+             33 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             36 LOAD_GLOBAL              3 (float)
+             39 COMPARE_OP               9 (is not)
+             42 POP_JUMP_IF_FALSE       60
+
+ 12          45 LOAD_GLOBAL              4 (TypeError)
+             48 LOAD_CONST               2 ('radius must be a number')
+             51 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             54 RAISE_VARARGS            1
+             57 JUMP_FORWARD             0 (to 60)
+
+ 13     >>   60 LOAD_FAST                1 (radius)
+             63 LOAD_FAST                0 (self)
+             66 STORE_ATTR               0 (_MagicClass__radius)
+             69 LOAD_CONST               3 (None)
+             72 RETURN_VALUE
+
+Disassembly of area:
+ 17           0 LOAD_FAST                0 (self)
+              3 LOAD_ATTR                0 (_MagicClass__radius)
+              6 LOAD_CONST               1 (2)
+              9 BINARY_POWER
+             10 LOAD_GLOBAL              1 (math)
+             13 LOAD_ATTR                2 (pi)
+             16 BINARY_MULTIPLY
+             17 RETURN_VALUE
+
+Disassembly of circumference:
+ 21           0 LOAD_CONST               1 (2)
+              3 LOAD_GLOBAL              0 (math)
+              6 LOAD_ATTR                1 (pi)
+              9 BINARY_MULTIPLY
+             10 LOAD_FAST                0 (self)
+             13 LOAD_ATTR                2 (_MagicClass__radius)
+             16 BINARY_MULTIPLY
+             17 RETURN_VALUE
+```
+
+The provided code defines a `MagicClass` that represents a circle. It includes attributes for radius of the circle and methods for initializing the class, calculating the diameter of the circle, setting the radius, and getting the radius. The code demonstrates encapsulation by using private attributes and provides basic functionality for working with circles.
