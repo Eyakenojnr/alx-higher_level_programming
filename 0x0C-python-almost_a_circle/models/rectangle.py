@@ -85,12 +85,15 @@ class Rectangle(Base):
 
     def display(self):
         """Prints in stdout the Rectangle instance using `#`."""
-        char = '#'
-        for y in range(self.__y):
-            print()
-        for x in range(self.__width):
-            print(' ' * self.__x, end='')
-            print(char * self.__width)
+        if self.width == 0 or self.height == 0:
+            print('')
+            return
+
+        [print('') for y in range(self.y)]
+        for h in range(self.height):
+            [print(' ', end='') for x in range(self.x)]
+            [print('#', end='') for w in range(self.width)]
+            print('')
 
     def update(self, *args, **kwargs):
         """Update the Rectangle
