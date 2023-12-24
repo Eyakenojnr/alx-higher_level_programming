@@ -1,8 +1,16 @@
 #!/usr/bin/node
-if (process.argv.length <= 3) {
-  console.log('0');
+const array = process.argv;
+let low = 0;
+let high = 0;
+
+if (array.length === 2 || array.length === 3) {
+  console.log(0);
 } else {
-  const arr = process.argv.slice(2).map(Number);
-  const second = arr.sort(function (a, b) { return b - a; })[1];
-  console.log(second);
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] > high) {
+      low = high;
+      high = Number(array[i]);
+    }
+  }
+  console.log(low);
 }
