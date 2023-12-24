@@ -7,9 +7,9 @@ if (array.length === 2 || array.length === 3) {
   console.log(0);
 } else {
   for (let i = 0; i <= array.length; i++) {
-    if (array[i] > high) {
+    if (Number(array[i]) > high) {
       low = high;
-      high = array[i];
+      high = Number(array[i]);
     }
   }
   console.log(low);
