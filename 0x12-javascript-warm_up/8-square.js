@@ -6,7 +6,7 @@ if (isNaN(input)) {
 } else {
   for (let i = 1; i <= input; i++) {
     let output = '';
-    for (let j = 1; i <= input; j++) {
+    for (let j = 1; j <= input; j++) {
       output += 'X';
     }
     console.log(output);
