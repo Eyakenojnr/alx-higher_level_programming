@@ -3,9 +3,7 @@ const array = process.argv;
 let low = 0;
 let high = 0;
 
-if (array.length === 2) {
-  console.log(0);
-} else if (array.length === 3) {
+if (array.length === 2 || array.length === 3) {
   console.log(0);
 } else {
   for (let i = 0; i <= array.length; i++) {
