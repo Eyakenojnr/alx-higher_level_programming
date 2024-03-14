@@ -1,11 +1,16 @@
 #!/usr/bin/python3
 """
-requests model
+Script that fetches https://alx-intranet.hbtn.io/status and displays
+the web page type and content.
 """
 
 if __name__ == '__main__':
     import requests
-    html = requests.get('https://alx-intranet.hbtn.io/status')
+
+    # Creating a Response object
+    r = requests.get('https://alx-intranet.hbtn.io/status')
+
+    # Print body response
     print("Body response:")
-    print("\t- type: {}".format(html.text.__class__))
-    print("\t- content: {}".format(html.text))
+    print(f"\t- type: {r.text.__class__}")
+    print(f"\t- content: {r.text}")
